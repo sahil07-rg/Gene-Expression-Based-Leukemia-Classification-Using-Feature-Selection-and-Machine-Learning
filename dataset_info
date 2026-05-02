@@ -1,0 +1,23 @@
+Dataset Files Description:-
+
+1. data_set_ALL_AML_train.csv
+Contains training gene expression measurements from leukemia patient samples.
+
+2. data_set_ALL_AML_independent.csv
+Contains independent patient samples used for testing and expanded evaluation.
+
+3. actual.csv
+Contains leukemia labels (ALL/AML) corresponding to patient samples.
+
+Dataset Source:
+Golub Leukemia Gene Expression Dataset (1999) - Kaggle
+The following code will download the dataset in your terminal.
+  
+  import kagglehub
+  # Download latest version
+  path = kagglehub.dataset_download("crawford/gene-expression")
+  print("Path to dataset files:", path)
+  
+
+Description:
+The dataset contains gene expression values collected using microarray experiments for leukemia subtype classification.
